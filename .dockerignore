@@ -1,0 +1,46 @@
+# Git
+.git
+.gitignore
+
+# Docker
+docker-compose.yml
+.dockerignore
+
+# Dependencias
+vendor
+node_modules
+
+# Logs
+*.log
+storage/logs/*
+!storage/logs/.gitignore
+
+storage/pail/*
+!storage/pail/.gitignore
+
+# Laravel framework cache
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/testing/*
+storage/framework/views/*
+!storage/framework/cache/.gitignore
+!storage/framework/sessions/.gitignore
+!storage/framework/testing/.gitignore
+!storage/framework/views/.gitignore
+
+# Debug
+storage/debugbar/*
+
+# Uploads / archivos privados
+storage/app/private/*
+!storage/app/private/.gitignore
+
+storage/app/public/*
+!storage/app/public/.gitignore
+
+# Cache
+bootstrap/cache/*.php
+public/hot
+
+# SQLite
+database/database.sqlite
