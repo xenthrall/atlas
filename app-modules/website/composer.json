@@ -1,0 +1,24 @@
+{
+	"name": "tequia/website",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Tequia\\Website\\": "src/",
+			"Tequia\\Website\\Tests\\": "tests/",
+			"Tequia\\Website\\Database\\Factories\\": "database/factories/",
+			"Tequia\\Website\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Tequia\\Website\\Providers\\WebsiteServiceProvider"
+			]
+		}
+	}
+}

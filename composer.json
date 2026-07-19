@@ -10,8 +10,10 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+        "internachi/modular": "^3.0",
         "laravel/framework": "^13.8",
-        "laravel/tinker": "^3.0"
+        "laravel/tinker": "^3.0",
+        "tequia/website": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -88,5 +90,14 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "app-modules/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
 }
