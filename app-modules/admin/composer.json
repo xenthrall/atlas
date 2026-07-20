@@ -1,0 +1,27 @@
+{
+    "name": "tequia/admin",
+    "description": "",
+    "type": "library",
+    "version": "1.0",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tequia\\Admin\\": "src/",
+            "Tequia\\Admin\\Tests\\": "tests/",
+            "Tequia\\Admin\\Database\\Factories\\": "database/factories/",
+            "Tequia\\Admin\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tequia\\Admin\\Providers\\AdminServiceProvider"
+            ]
+        }
+    }
+}

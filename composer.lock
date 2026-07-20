@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63763b533c47ce3d9c9feb1deb766966",
+    "content-hash": "9dbb7ae47b4b22693527ede57f6caa31",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -9599,6 +9599,78 @@
                 }
             ],
             "time": "2026-06-08T20:24:16+00:00"
+        },
+        {
+            "name": "tequia/admin",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "app-modules/admin",
+                "reference": "bb0d41bebb6cbf841fc233f43fc622547d59cf3a"
+            },
+            "require": {
+                "filament/filament": "^5.0",
+                "php": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tequia\\Admin\\Providers\\AdminServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tequia\\Admin\\": "src/",
+                    "Tequia\\Admin\\Tests\\": "tests/",
+                    "Tequia\\Admin\\Database\\Factories\\": "database/factories/",
+                    "Tequia\\Admin\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "tequia/app",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "app-modules/app",
+                "reference": "4c44a4b6cebe562ffc9caedd4376c4d04bf22526"
+            },
+            "require": {
+                "filament/filament": "^5.0",
+                "php": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tequia\\App\\Providers\\AppServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tequia\\App\\": "src/",
+                    "Tequia\\App\\Tests\\": "tests/",
+                    "Tequia\\App\\Database\\Factories\\": "database/factories/",
+                    "Tequia\\App\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "tequia/website",

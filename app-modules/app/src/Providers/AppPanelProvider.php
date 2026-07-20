@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers\Filament;
+namespace Tequia\App\Providers;
 
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -18,14 +18,14 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
-class AtlasPanelProvider extends PanelProvider
+class AppPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
         return $panel
             ->default()
-            ->id('atlas')
-            ->path('atlas')
+            ->id('app')
+            ->path('app')
             ->login()
             ->colors([
                 'danger' => Color::Rose,
@@ -35,12 +35,21 @@ class AtlasPanelProvider extends PanelProvider
                 'success' => Color::Emerald,
                 'warning' => Color::Orange,
             ])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
-            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
+            ->discoverResources(
+                in: __DIR__ . '/../Filament/Resources',
+                for: 'Tequia\\App\\Filament\\Resources',
+            )
+            ->discoverPages(
+                in: __DIR__ . '/../Filament/Pages',
+                for: 'Tequia\\App\\Filament\\Pages',
+            )
+            ->discoverWidgets(
+                in: __DIR__ . '/../Filament/Widgets',
+                for: 'Tequia\\App\\Filament\\Widgets',
+            )
             ->pages([
                 Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
                 AccountWidget::class,
             ])
