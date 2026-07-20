@@ -3,4 +3,5 @@
 return [
     App\Providers\AppServiceProvider::class,
     App\Providers\Filament\AtlasPanelProvider::class,
+     App\Providers\TenancyServiceProvider::class,
 ];

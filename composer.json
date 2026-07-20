@@ -11,6 +11,7 @@
         "internachi/modular": "^3.0",
         "laravel/framework": "^13.8",
         "laravel/tinker": "^3.0",
+        "stancl/tenancy": "^3.10",
         "tequia/website": "*"
     },
     "require-dev": {
