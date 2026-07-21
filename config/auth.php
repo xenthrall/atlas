@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\User;
+use Tequia\Identity\Models\User;
 
 return [
 

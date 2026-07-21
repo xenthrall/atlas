@@ -17,6 +17,7 @@
         "stancl/tenancy": "^3.10",
         "tequia/admin": "*",
         "tequia/app": "*",
+        "tequia/identity": "*",
         "tequia/website": "*"
     },
     "require-dev": {

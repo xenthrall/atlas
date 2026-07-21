@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dbb7ae47b4b22693527ede57f6caa31",
+    "content-hash": "6c423ba9b350d463ad9dbe5d20d858a6",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -9662,6 +9662,38 @@
                     "Tequia\\App\\Tests\\": "tests/",
                     "Tequia\\App\\Database\\Factories\\": "database/factories/",
                     "Tequia\\App\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "tequia/identity",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "app-modules/identity",
+                "reference": "b440ca0d9f1a2faa20c78fad4fc600352bfb3560"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tequia\\Identity\\Providers\\IdentityServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tequia\\Identity\\": "src/",
+                    "Tequia\\Identity\\Tests\\": "tests/",
+                    "Tequia\\Identity\\Database\\Factories\\": "database/factories/",
+                    "Tequia\\Identity\\Database\\Seeders\\": "database/seeders/"
                 }
             },
             "license": [

@@ -1,8 +1,8 @@
 <?php
 
-namespace Database\Factories;
+namespace Tequia\Identity\Database\Factories;
 
-use App\Models\User;
+use Tequia\Identity\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -12,6 +12,7 @@ use Illuminate\Support\Str;
  */
 class UserFactory extends Factory
 {
+    
     /**
      * The current password being used by the factory.
      */

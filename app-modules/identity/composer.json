@@ -1,0 +1,24 @@
+{
+	"name": "tequia/identity",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "MIT",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Tequia\\Identity\\": "src/",
+			"Tequia\\Identity\\Tests\\": "tests/",
+			"Tequia\\Identity\\Database\\Factories\\": "database/factories/",
+			"Tequia\\Identity\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Tequia\\Identity\\Providers\\IdentityServiceProvider"
+			]
+		}
+	}
+}
